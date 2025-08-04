@@ -11,5 +11,21 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+        for(int i=0;i<6;i+=2)
+            System.out.println(i);
+        // Code block to find and print prime numbers up to 20
+        System.out.println("Prime numbers up to 20:");
+        for (int num = 2; num <= 20; num++) {
+            boolean isPrime = true;
+            for (int j = 2; j <= Math.sqrt(num); j++) {
+                if (num % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.println(num);
+            }
+        }
     }
 }
